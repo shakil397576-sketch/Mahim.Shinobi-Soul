@@ -22,7 +22,7 @@ body{
   background-size:cover;
   overflow:hidden;
   color:black;
-  text-shadow:0 0 3px rgba(255,255,255,0.4);
+  text-shadow:0 0 2px rgba(255,255,255,0.4);
 }
 
 /* ===== LOADING SCREEN ===== */
@@ -116,19 +116,24 @@ body{
 .info{
   flex:1;
   padding:40px;
-  background:rgba(255,255,255,0.05);
-  color:black;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
 }
 
-.info p{
-  margin:12px 0;
-  font-size:20px; /* bigger font */
-  text-shadow:0 0 4px white; /* subtle glow */
+/* ===== BIO BOX ===== */
+.bio-box{
+  background:black;
+  padding:20px;
+  border-radius:8px;
+  color:white;
+  text-shadow:0 0 6px white;
+  font-size:20px;
+  line-height:1.5;
 }
 
 /* ===== BIG BUTTONS ===== */
 .big-buttons{
-  margin-top:25px;
   display:flex;
   gap:25px;
 }
@@ -257,9 +262,12 @@ body{
 </div>
 
 <div class="info">
-  <p>Hello I Am Mahim - SSC 2027 Batch / So I Create This Web For Learning</p>
-  <p>My Clan Is Kazi - And Muslim / My Dream Is BE Rich And Be BUSINESSMAN</p>
-  <p>I Am From Tangail [Bd] - My Birthday (22 Dec 2008) So Right Now I Am 16</p>
+  <!-- BIO BLACK BOX -->
+  <div class="bio-box">
+    <p>Hello I Am Mahim - SSC 2027 Batch / So I Create This Web For Learning</p>
+    <p>My Clan Is Kazi - And Muslim / My Dream Is BE Rich And Be BUSINESSMAN</p>
+    <p>I Am From Tangail [Bd] - My Birthday (22 Dec 2008) So Right Now I Am 16</p>
+  </div>
 
   <!-- BIG BUTTONS -->
   <div class="big-buttons">
